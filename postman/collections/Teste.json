@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "d4408eea-11f0-4d10-9d3b-98911c1711b7",
+		"name": "Teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "27479005-d4408eea-11f0-4d10-9d3b-98911c1711b7"
+	},
+	"item": [
+		{
+			"name": "listar",
+			"id": "b51af15f-03d0-47d9-b691-ba15db141d59",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir",
+			"id": "49aa17fa-4a38-4aca-a44e-ed65391550f4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descricao\" : \"UNO\",\r\n    \"cor\" : \"azul\",\r\n    \"valor\" : 80620.26\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}?descricao=Uno",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "descricao",
+							"value": "Uno"
+						},
+						{
+							"key": "cor",
+							"value": "Azul",
+							"disabled": true
+						},
+						{
+							"key": "valor",
+							"value": "80652.36",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"id": "06ef8854-318e-4daf-9b80-637ed7226c60",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\",\r\n    \"descricao\" : \"Ranger\",\r\n    \"cor\" : \"Verde\",\r\n    \"valor\" : 390000.56\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar",
+			"id": "333919fc-dc25-42e8-b515-53956168aec9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Copy",
+			"id": "5ad6cbe6-05ea-4a97-888d-61bf04884ed0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
