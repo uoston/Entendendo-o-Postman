@@ -105,28 +105,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "Deletar Copy",
-			"id": "5ad6cbe6-05ea-4a97-888d-61bf04884ed0",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 3\r\n}"
-				},
-				"url": {
-					"raw": "{{url}}",
-					"host": [
-						"{{url}}"
-					]
-				}
-			},
-			"response": []
 		}
 	]
 }
